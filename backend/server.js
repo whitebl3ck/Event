@@ -38,3 +38,6 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 //Make /uploads folder public
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+const paystackRouter = require('./routes/paystack');
+app.use('/api/paystack', paystackRouter);

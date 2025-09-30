@@ -15,7 +15,7 @@ import AddVenue from './components/dashboard/AddVenue';
 import VenueDetails from './components/dashboard/VenueDetails';
 import EventDetails from './components/events/EventDetails';
 import RegisterEvent from './components/events/RegisterEvent';
-
+import PaystackTest from './components/PaystackTest';
 
 
 
@@ -28,6 +28,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/test-paystack" element={<PaystackTest />} />  
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<Search />} />
             <Route path="venues" element={<ManageVenues />} />
